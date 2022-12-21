@@ -43,14 +43,185 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
-.row + .row {
-  margin-top: 16px;
+// .row + .row {
+//   margin-top: 16px;
+// }
+
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }
+
+main {
+  background-color: black;
+  color: white;
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+@font-face {
+  font-family: "SF Pro";
+  src: url("../font/SF-Pro-Display-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../font/SF-Pro-Display-Light.woff") format("woff");
+  font-weight: light;
+  font-style: light;
+}
+
+body {
+  font-family: SF Pro;
+}
+
+img {
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 10px 0 30px;
+}
+
+.quote {
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-top: 0;
+  }
+  .quote {
+    font-size: 20px;
+  }
+}
+
+.cube {
+  margin: 0 0 20px 0;
+}
+
+.inside-box {
+  margin: 30px 0 30px 0;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  font-size: 24px;
+}
+
+.logo-media {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+}
+
+.logo-media img {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .quote {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+  .quote {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button-reservation {
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  border-radius: 500px;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 120px;
+}
+
+// .location-image {
+//   background-image: linear-gradient(
+//       180deg,
+//       rgba(0, 0, 0, 1) 5%,
+//       rgba(0, 0, 0, 0) 30%,
+//       rgba(0, 0, 0, 0) 70%,
+//       rgba(0, 0, 0, 1) 95%
+//     ),
+//     url("../img/desert.webp");
+//   width: 100%;
+//   height: 292px;
+//   background-size: cover;
+//   color: white;
+// }
+
+footer {
+  padding: 30px 0;
+}
+
+.marge {
+  padding: 30px 0;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  animation-duration: 40s;
+  animation-name: locationImages;
+  animation-iteration-count: infinite;
+}
+.carousel-box {
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes locationImages {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-400%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.gradient {
+  position: relative;
+  z-index: 1000;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
