@@ -120,11 +120,11 @@ h2 {
 .logo-media {
   display: flex;
   flex-direction: row;
-  width: 50px;
+  align-items: center;
 }
 
-.logo-media img {
-  margin: 0 10px;
+.logo-media div {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 750px) {
@@ -188,8 +188,8 @@ footer {
 }
 
 .carousel {
-  position: relative;
   display: flex;
+  position: relative;
   animation-duration: 40s;
   animation-name: locationImages;
   animation-iteration-count: infinite;
@@ -224,4 +224,37 @@ footer {
     rgba(0, 0, 0, 0) 70%,
     rgba(0, 0, 0, 1) 100%
   );
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer,
+  .info {
+    transform: translateY(50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-contact {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .media-contact {
+    padding: 20px 0 0 10px;
+  }
+
+  .location-contact {
+    padding: 20px 10px 0 0;
+  }
+  .logo-media {
+  }
+}
+
+.drinks,
+.snacks {
+  transform: translate(25%);
 }

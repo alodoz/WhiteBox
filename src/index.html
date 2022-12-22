@@ -18,11 +18,11 @@
           <div class="row">
             <div class="col-12">
               <div class="navigation">
-                <a href="">Informations</a>
-                <a href="">Menu</a>
-                <a href="">Contact</a>
-                <a href="">Reservation</a>
-                <a href="">Location</a>
+                <a href="#information">Informations</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+                <a href="#reservation">Reservation</a>
+                <a href="#location">Location</a>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@
             </div>
           </div>
           <div class="col-8 offset-1 col-md-5 offset-md-1 ">
-            <div class="info">
+            <div id="information" class="info">
               <h2>What is White Box ?</h2>
               <p>
                 Our exceptional bars are located in unusual locations around the
@@ -88,36 +88,40 @@
       <div class="container">
         <div class="row">
           <div class="col-5 offset-1">
-            <div class="marge">
-              <h2>Drinks</h2>
-              <ul>
-                <li>Beer</li>
-                <li>Wine</li>
-                <li>Champagne</li>
-                <li>Black coffee</li>
-                <li>Hot chocolate</li>
-                <li>Soda</li>
-              </ul>
+            <div id="menu" class="marge">
+              <div class="drinks">
+                <h2>Drinks</h2>
+                <ul>
+                  <li>Beer</li>
+                  <li>Wine</li>
+                  <li>Champagne</li>
+                  <li>Black coffee</li>
+                  <li>Hot chocolate</li>
+                  <li>Soda</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-5 offset-1">
+          <div class="col-5">
             <div class="marge">
-              <h2>Snacks</h2>
-              <ul>
-                <li>Tapas</li>
-                <li>Salad</li>
-                <li>Meat stick</li>
-                <li>Ice cream</li>
-                <li>Caviar</li>
-                <li>Appetizer</li>
-              </ul>
+              <div class="snacks">
+                <h2>Snacks</h2>
+                <ul>
+                  <li>Tapas</li>
+                  <li>Salad</li>
+                  <li>Meat stick</li>
+                  <li>Ice cream</li>
+                  <li>Caviar</li>
+                  <li>Appetizer</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div> 
       <div class="carousel-box">
         <div class="gradient">
-          <div class="carousel">
+          <div id="location" class="carousel">
             <img src="img/mountain.webp" alt="moutain" />
             <img src="img/jungle.webp" alt="jungle" />
             <img src="img/desert.webp" alt="desert" />
@@ -134,8 +138,8 @@
               <p>
                 We are located in the Amazonia Jungle, in Caribbean, Greenland,
                 Switzerland and in the Sahara desert.
-              </p>          
-              <div class="button-reservation">Reservation</div>
+              </p>
+              <div id="reservation" class="button-reservation"><a>Reservation</a> </div>      
             </div>
           </div>
           <div class="col-8 offset-2 col-md-5 offset-md-1">
@@ -150,18 +154,26 @@
       <div class="container">
         <div class="row">
           <div class="col-8 offset-2 col-md-5 offset-md-1">
-            <img src="img/Logo.svg" alt="logo" />
+            <div class="logo-footer">
+              <img src="img/Logo.svg" alt="logo" />
+            </div>
           </div>
-          <div class="col-8 offset-2 col-md-5 offset-md-1">
-            <h2>The head office</h2>
-            <p>16 Rue St.George</p>
-            <p>Geneva</p>
-            <p>Switzerland</p>
-            <h2>Contact</h2>
-            <div class="logo-media">
-              <img src="img/instagram.svg" alt="instagram" />
-              <img src="img/youtube.svg" alt="youtube" />
-              <img src="img/mail.svg" alt="mail" />
+          <div id="contact" class="col-8 offset-2 col-md-5 offset-md-1">
+            <div class="container-contact">
+              <div class="location-contact">
+                <h2>The head office</h2>
+                <p>16 Rue St.George</p>
+                <p>Geneva</p>
+                <p>Switzerland</p>
+              </div>
+              <div class="media-contact">
+                <h2>Contact</h2>
+                <div class="logo-media">
+                  <div><a href="https://www.instagram.com"><img src="img/instagram.svg" alt="instagram" /></a></div>
+                  <div><a href="https://www.youtube.com"><img src="img/youtube.svg" alt="youtube" /></a></div>
+                  <div><a href="mailto:whitebox@gmail.com"><img src="img/mail.svg" alt="mail" /></a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
